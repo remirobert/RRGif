@@ -28,8 +28,8 @@ Next you can move the binary, to use it like a command everywhere.
 sudo cp gif /usr/bin
 ```
 
-How to use
-==========
+How to use RRGif
+================
 ```Shell
 ./RRGif.swift --images *.png --delay 1
 ```
