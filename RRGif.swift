@@ -11,7 +11,6 @@ var images = Array<CGImage>()
 var delayFrame: Float = 0.5
 let path = NSProcessInfo.processInfo().environment["PWD"] as! String
 
-
 arguments = Process.arguments
 arguments.removeAtIndex(0)
 
@@ -54,11 +53,9 @@ func makeGif() {
     }
     CGImageDestinationSetProperties(destination, gifProperties);
     CGImageDestinationFinalize(destination);
-    println("Done [\(path)/test.gif]")
 }
 
 parseArguments()
 if images.count > 0 {
-    println("make gif")
     makeGif()
 }
